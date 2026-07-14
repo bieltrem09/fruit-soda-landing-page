@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Soda Carousel</title>
+    <!-- Fontes: Montserrat e Noto Sans KR -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="carousel">
+        
+        <!-- UI: Textos e Setas -->
+        <div class="ui-layer">
+            <h1 class="title-korean">과<br>일<br><br>소<br>다</h1>
+            
+            <div class="description">
+                <h2 id="flavor-title">Blueberry</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa consequuntur, consequatur, rem cumque ducimus aspernatur cupiditate molestias fugiat.</p>
+            </div>
+
+            <div class="arrows">
+                <button id="prev"><i class='bx bx-chevron-left'></i></button>
+                <button id="next"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </div>
+
+        <!-- O Carrossel (Roda Gigante) -->
+        <div class="slider-container">
+            <div class="slider">
+                
+<!-- Lata 1: Mirtilo (Blueberry) -> ADICIONEI O 'active' AQUI -->
+                <div class="item active" style="--i: 0;">
+                    <div class="content-wrapper">
+                        <img src="images/fruit1.png" class="fruits" alt="Blueberries">
+                        <img src="images/can1.png" class="can" alt="Blueberry Can">
+                    </div>
+                </div>
+
+                <!-- Lata 2: Laranja -->
+                <div class="item" style="--i: 1;">
+                    <div class="content-wrapper">
+                        <img src="images/fruit2.png" class="fruits" alt="Oranges">
+                        <img src="images/can2.png" class="can" alt="Orange Can">
+                    </div>
+                </div>
+
+                <!-- Lata 3: Morango -->
+                <div class="item" style="--i: 2;">
+                    <div class="content-wrapper">
+                        <img src="images/fruit3.png" class="fruits" alt="Strawberries">
+                        <img src="images/can3.png" class="can" alt="Strawberry Can">
+                    </div>
+                </div>
+
+                <!-- Lata 4: Maçã Verde -->
+                <div class="item" style="--i: 3;">
+                    <div class="content-wrapper">
+                        <img src="images/fruit4.png" class="fruits" alt="Green Apples">
+                        <img src="images/can4.png" class="can" alt="Apple Can">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
